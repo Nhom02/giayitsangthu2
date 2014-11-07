@@ -1,0 +1,172 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://tempuri.org/" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="ServiceTonKho" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import namespace="http://tempuri.org/" />
+      <xsd:import namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import namespace="http://schemas.datacontract.org/2004/07/ServiceGiayit" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="IServiceTonKho_getalltonkho_InputMessage">
+    <wsdl:part name="parameters" element="tns:getalltonkho" />
+  </wsdl:message>
+  <wsdl:message name="IServiceTonKho_getalltonkho_OutputMessage">
+    <wsdl:part name="parameters" element="tns:getalltonkhoResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServiceTonKho_getalltonkholoc_InputMessage">
+    <wsdl:part name="parameters" element="tns:getalltonkholoc" />
+  </wsdl:message>
+  <wsdl:message name="IServiceTonKho_getalltonkholoc_OutputMessage">
+    <wsdl:part name="parameters" element="tns:getalltonkholocResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServiceTonKho_Select_tonkho_InputMessage">
+    <wsdl:part name="parameters" element="tns:Select_tonkho" />
+  </wsdl:message>
+  <wsdl:message name="IServiceTonKho_Select_tonkho_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Select_tonkhoResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServiceTonKho_Select_tonkho_theosanpham_InputMessage">
+    <wsdl:part name="parameters" element="tns:Select_tonkho_theosanpham" />
+  </wsdl:message>
+  <wsdl:message name="IServiceTonKho_Select_tonkho_theosanpham_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Select_tonkho_theosanphamResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServiceTonKho_Themtk_InputMessage">
+    <wsdl:part name="parameters" element="tns:Themtk" />
+  </wsdl:message>
+  <wsdl:message name="IServiceTonKho_Themtk_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ThemtkResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServiceTonKho_giamtk_InputMessage">
+    <wsdl:part name="parameters" element="tns:giamtk" />
+  </wsdl:message>
+  <wsdl:message name="IServiceTonKho_giamtk_OutputMessage">
+    <wsdl:part name="parameters" element="tns:giamtkResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServiceTonKho_Trusoluongkhidathang_InputMessage">
+    <wsdl:part name="parameters" element="tns:Trusoluongkhidathang" />
+  </wsdl:message>
+  <wsdl:message name="IServiceTonKho_Trusoluongkhidathang_OutputMessage">
+    <wsdl:part name="parameters" element="tns:TrusoluongkhidathangResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServiceTonKho_Them_InputMessage">
+    <wsdl:part name="parameters" element="tns:Them" />
+  </wsdl:message>
+  <wsdl:message name="IServiceTonKho_Them_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ThemResponse" />
+  </wsdl:message>
+  <wsdl:portType name="IServiceTonKho">
+    <wsdl:operation name="getalltonkho">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServiceTonKho/getalltonkho" message="tns:IServiceTonKho_getalltonkho_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServiceTonKho/getalltonkhoResponse" message="tns:IServiceTonKho_getalltonkho_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="getalltonkholoc">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServiceTonKho/getalltonkholoc" message="tns:IServiceTonKho_getalltonkholoc_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServiceTonKho/getalltonkholocResponse" message="tns:IServiceTonKho_getalltonkholoc_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Select_tonkho">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServiceTonKho/Select_tonkho" message="tns:IServiceTonKho_Select_tonkho_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServiceTonKho/Select_tonkhoResponse" message="tns:IServiceTonKho_Select_tonkho_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Select_tonkho_theosanpham">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServiceTonKho/Select_tonkho_theosanpham" message="tns:IServiceTonKho_Select_tonkho_theosanpham_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServiceTonKho/Select_tonkho_theosanphamResponse" message="tns:IServiceTonKho_Select_tonkho_theosanpham_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Themtk">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServiceTonKho/Themtk" message="tns:IServiceTonKho_Themtk_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServiceTonKho/ThemtkResponse" message="tns:IServiceTonKho_Themtk_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="giamtk">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServiceTonKho/giamtk" message="tns:IServiceTonKho_giamtk_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServiceTonKho/giamtkResponse" message="tns:IServiceTonKho_giamtk_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Trusoluongkhidathang">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServiceTonKho/Trusoluongkhidathang" message="tns:IServiceTonKho_Trusoluongkhidathang_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServiceTonKho/TrusoluongkhidathangResponse" message="tns:IServiceTonKho_Trusoluongkhidathang_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Them">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServiceTonKho/Them" message="tns:IServiceTonKho_Them_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServiceTonKho/ThemResponse" message="tns:IServiceTonKho_Them_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="BasicHttpBinding_IServiceTonKho" type="tns:IServiceTonKho">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="getalltonkho">
+      <soap:operation soapAction="http://tempuri.org/IServiceTonKho/getalltonkho" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getalltonkholoc">
+      <soap:operation soapAction="http://tempuri.org/IServiceTonKho/getalltonkholoc" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Select_tonkho">
+      <soap:operation soapAction="http://tempuri.org/IServiceTonKho/Select_tonkho" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Select_tonkho_theosanpham">
+      <soap:operation soapAction="http://tempuri.org/IServiceTonKho/Select_tonkho_theosanpham" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Themtk">
+      <soap:operation soapAction="http://tempuri.org/IServiceTonKho/Themtk" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="giamtk">
+      <soap:operation soapAction="http://tempuri.org/IServiceTonKho/giamtk" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Trusoluongkhidathang">
+      <soap:operation soapAction="http://tempuri.org/IServiceTonKho/Trusoluongkhidathang" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Them">
+      <soap:operation soapAction="http://tempuri.org/IServiceTonKho/Them" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="ServiceTonKho">
+    <wsdl:port name="BasicHttpBinding_IServiceTonKho" binding="tns:BasicHttpBinding_IServiceTonKho">
+      <soap:address location="http://localhost:8733/Design_Time_Addresses/ServiceGiayit/ServiceTonKho/" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

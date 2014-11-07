@@ -1,0 +1,74 @@
+﻿
+@model IEnumerable<giayit.ServiceReferenceSanPham.sanpham>
+@{
+    ViewBag.Title = "Admin - Sửa sản phẩm";
+    Layout = "~/Areas/admin/Views/Shared/_Layout.cshtml";
+    //List<loaisanpham> loai = new List<loaisanpham>(ViewBag.loaisanpham);
+}
+<div class="columcenter">
+    <div class="header-center">SỬA SẢN PHẨM </div>
+    <div style="width:781px;height:auto" >
+<div class="formn">
+    <fieldset style="width:auto">
+            <legend style="flex-item-align:center">Thông tin</legend>     
+           <form  name="fthem" enctype="multipart/form-data" action = "edit" method = "post"  onsubmit="return checkinput1()" >
+
+                @foreach(var item in Model)
+                {
+                 <div class="editor-label">
+                    Tên sản phẩm
+                 </div>
+                 <input type="text" name="tensp" oninput="return checktensp()" value="@Html.DisplayFor(m=>item.tensanpham)"/><b><font size="-1" color="red"><tensp></tensp></font></b><br />
+                <div class="editor-label">
+                    Hãng :
+                 </div>
+                <select name="loaisp"> 
+                    @foreach (var ma in ViewBag.loaisanpham)
+                    {
+                        if(item.maloai==ma.maloai)
+                        {
+                        <option selected="selected" value="@ma.maloai">@ma.tenloai</option>
+                         }
+                         else
+                         {
+                        <option value="@ma.maloai">@ma.tenloai</option>
+                    }
+   	    	        }
+                    </select><b><font size="-1" color="red"><loai></loai></font></b>
+                 <div class="editor-label">
+                    Chất liệu
+                 </div>
+                 <input type="text" name="chatlieu" oninput="return checkchatlieu()" value="@Html.DisplayFor(m=>item.chatlieu)"/><b><font size="-1" color="red"><clieu></clieu></font></b><img name="userID" src="" /><br />
+                 <div class="editor-label">
+                    Giá
+                 </div>
+                 <input type="text" name="gia" oninput="return checkgia()" value="@Html.DisplayFor(m=>item.giasanpham)"/><b><font size="-1" color="red"><gia></gia></font></b><img name="userID" src="" /><br />
+                 <div class="editor-label">
+                    Mô tả
+                 </div>
+                 <input type="text" name="mota" oninput="return checkmota()" value="@Html.DisplayFor(m=>item.motasanpham)"/><b><font size="-1" color="red"><mota></mota></font></b><img name="userID" src="" /><br />
+                 <div class="editor-label">
+                    Số lượng
+                 </div>
+                 <input type="text" name="sl" oninput="return checksluong()" value="@Html.DisplayFor(m=>item.soluongcon)"/><b><font size="-1" color="red"><sluong></sluong></font></b><img name="userID" src="" /><br />
+                 <div class="editor-label">
+                    Hình ảnh cũ:
+                 </div>
+                    <img src="../../@Html.DisplayFor(m=>item.hinhanh)" width="200px" height="200px"/><br/>
+                    <div class="editor-label">
+                    Chọn hình ảnh mới
+                 </div>
+                 <input type="file" name="file"/><br />
+                 <input type="hidden"name="_hinhanh" value="@Html.DisplayFor(m=>item.hinhanh)"/>
+                 //<input type="hidden"name="loaisp" value="@Html.DisplayFor(m=>item.maloai)"/>
+                 <input type="hidden"name="id" value="@Html.DisplayFor(m=>item.masanpham)"/>
+                 <span class="btn">
+                    <input type="submit"   value="Sửa" style="margin-top: 10px; width: 257px; cursor:pointer" /><br />
+                </span>
+                }
+
+            </form>
+        </fieldset><a href="index"><img src="../../../../Image/back.png"/></a>
+    </div>
+        </div>
+    </div>

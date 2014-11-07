@@ -1,0 +1,44 @@
+﻿@model giayit.Models.dsgiohang
+  
+<div id="cart">
+    	<div class="c_tt">
+        	<img id="logo-cart" src="../Image/icon_cart.png" />        	
+        </div>
+        <div class="c_ct">
+            @if (Model.Cart.listsp.Count == 0)
+            {
+                <p style="font-family:'Times New Roman'; font-size: 18px; color: red; text-align:center">Bạn chưa chọn sản phẩm</p>
+            }
+            else
+            {
+            <table width="330">
+                @foreach(var line in Model.Cart.listsp)
+                {
+                    <tr>
+                        <td>
+                            <a href="../sanpham/ChiTietSanPham?masp=@line.masp">
+                                <img src="../@line.hinhanh" width="100" height="100" />
+                            </a>
+                        </td>
+                        <td>
+                            <p>@line.Quantity x @line.tensp</p>
+                            <p>@String.Format("{0:0,0 VNĐ}", Convert.ToInt32(line.giasanpham)) </p>
+                        </td>
+                        <td>
+                            <a onclick="return xacnhanxoa('@line.masp')" href="/giohang/giohangxoa?masanpham=@line.masp"><img src="../Image/icon-del.png" /></a>
+                        </td>
+                    </tr>
+                }
+                
+                
+            </table>
+            }
+        </div> 
+        <div class="c_tien">
+            <span style="font-size: 15px; margin-left: 5px;">Số lượng: @Model.Cart.tongsoluong()</span>  
+            <br />
+        	<span style="font-size: 15px; margin-left: 5px;">Tổng tiền:  @String.Format("{0:0,0 VNĐ}", Convert.ToInt32(Model.Cart.tongtien()))</span>            
+            <br />
+            <span><a href="../GioHang/Index" style="color:#f3515c; font-size: 15px; margin-left: 5px;">Xem chi tiết giỏ hàng</a></span>
+        </div>
+    </div>

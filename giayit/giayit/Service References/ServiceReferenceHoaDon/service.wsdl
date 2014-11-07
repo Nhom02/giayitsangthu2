@@ -1,0 +1,153 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://tempuri.org/" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="ServiceHoaDon" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import namespace="http://tempuri.org/" />
+      <xsd:import namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import namespace="http://schemas.datacontract.org/2004/07/ServiceGiayit" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="IServiceHoaDon_editdonhang_InputMessage">
+    <wsdl:part name="parameters" element="tns:editdonhang" />
+  </wsdl:message>
+  <wsdl:message name="IServiceHoaDon_editdonhang_OutputMessage">
+    <wsdl:part name="parameters" element="tns:editdonhangResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServiceHoaDon_Getallhoadon_InputMessage">
+    <wsdl:part name="parameters" element="tns:Getallhoadon" />
+  </wsdl:message>
+  <wsdl:message name="IServiceHoaDon_Getallhoadon_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetallhoadonResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServiceHoaDon_themhoadon_InputMessage">
+    <wsdl:part name="parameters" element="tns:themhoadon" />
+  </wsdl:message>
+  <wsdl:message name="IServiceHoaDon_themhoadon_OutputMessage">
+    <wsdl:part name="parameters" element="tns:themhoadonResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServiceHoaDon_Select_hoadon_theonam_InputMessage">
+    <wsdl:part name="parameters" element="tns:Select_hoadon_theonam" />
+  </wsdl:message>
+  <wsdl:message name="IServiceHoaDon_Select_hoadon_theonam_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Select_hoadon_theonamResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServiceHoaDon_laytongtientheothang_InputMessage">
+    <wsdl:part name="parameters" element="tns:laytongtientheothang" />
+  </wsdl:message>
+  <wsdl:message name="IServiceHoaDon_laytongtientheothang_OutputMessage">
+    <wsdl:part name="parameters" element="tns:laytongtientheothangResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServiceHoaDon_Select_hoadon_theothang_InputMessage">
+    <wsdl:part name="parameters" element="tns:Select_hoadon_theothang" />
+  </wsdl:message>
+  <wsdl:message name="IServiceHoaDon_Select_hoadon_theothang_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Select_hoadon_theothangResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServiceHoaDon_laytongtientheongay_InputMessage">
+    <wsdl:part name="parameters" element="tns:laytongtientheongay" />
+  </wsdl:message>
+  <wsdl:message name="IServiceHoaDon_laytongtientheongay_OutputMessage">
+    <wsdl:part name="parameters" element="tns:laytongtientheongayResponse" />
+  </wsdl:message>
+  <wsdl:portType name="IServiceHoaDon">
+    <wsdl:operation name="editdonhang">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServiceHoaDon/editdonhang" message="tns:IServiceHoaDon_editdonhang_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServiceHoaDon/editdonhangResponse" message="tns:IServiceHoaDon_editdonhang_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Getallhoadon">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServiceHoaDon/Getallhoadon" message="tns:IServiceHoaDon_Getallhoadon_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServiceHoaDon/GetallhoadonResponse" message="tns:IServiceHoaDon_Getallhoadon_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="themhoadon">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServiceHoaDon/themhoadon" message="tns:IServiceHoaDon_themhoadon_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServiceHoaDon/themhoadonResponse" message="tns:IServiceHoaDon_themhoadon_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Select_hoadon_theonam">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServiceHoaDon/Select_hoadon_theonam" message="tns:IServiceHoaDon_Select_hoadon_theonam_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServiceHoaDon/Select_hoadon_theonamResponse" message="tns:IServiceHoaDon_Select_hoadon_theonam_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="laytongtientheothang">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServiceHoaDon/laytongtientheothang" message="tns:IServiceHoaDon_laytongtientheothang_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServiceHoaDon/laytongtientheothangResponse" message="tns:IServiceHoaDon_laytongtientheothang_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Select_hoadon_theothang">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServiceHoaDon/Select_hoadon_theothang" message="tns:IServiceHoaDon_Select_hoadon_theothang_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServiceHoaDon/Select_hoadon_theothangResponse" message="tns:IServiceHoaDon_Select_hoadon_theothang_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="laytongtientheongay">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServiceHoaDon/laytongtientheongay" message="tns:IServiceHoaDon_laytongtientheongay_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServiceHoaDon/laytongtientheongayResponse" message="tns:IServiceHoaDon_laytongtientheongay_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="BasicHttpBinding_IServiceHoaDon" type="tns:IServiceHoaDon">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="editdonhang">
+      <soap:operation soapAction="http://tempuri.org/IServiceHoaDon/editdonhang" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Getallhoadon">
+      <soap:operation soapAction="http://tempuri.org/IServiceHoaDon/Getallhoadon" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="themhoadon">
+      <soap:operation soapAction="http://tempuri.org/IServiceHoaDon/themhoadon" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Select_hoadon_theonam">
+      <soap:operation soapAction="http://tempuri.org/IServiceHoaDon/Select_hoadon_theonam" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="laytongtientheothang">
+      <soap:operation soapAction="http://tempuri.org/IServiceHoaDon/laytongtientheothang" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Select_hoadon_theothang">
+      <soap:operation soapAction="http://tempuri.org/IServiceHoaDon/Select_hoadon_theothang" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="laytongtientheongay">
+      <soap:operation soapAction="http://tempuri.org/IServiceHoaDon/laytongtientheongay" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="ServiceHoaDon">
+    <wsdl:port name="BasicHttpBinding_IServiceHoaDon" binding="tns:BasicHttpBinding_IServiceHoaDon">
+      <soap:address location="http://localhost:8733/Design_Time_Addresses/ServiceGiayit/ServiceHoaDon/" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

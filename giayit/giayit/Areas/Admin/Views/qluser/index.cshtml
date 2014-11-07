@@ -1,0 +1,61 @@
+﻿@model IEnumerable<giayit.ServiceReferenceAccount.user>
+@{
+    ViewBag.Title = "Admin - Quản lý tài khoản";
+    Layout = "~/Areas/admin/Views/Shared/_Layout.cshtml";
+}
+
+<div class="columcenter">
+     <div class="header-center">QUẢN LÝ NGƯỜI DÙNG</div>   
+     	<div class="canhgiua" style="width:781px;height:auto" >
+              @if (TempData["message"] != null) { 
+                        <p style="color:red; text-align:left;">@TempData["message"]</p>
+                    } 
+        <table id="t01" align="center" width="790" style="margin-top: 0px; font-size:14px; margin-bottom: 20px">
+                    	<tr align="center" bgcolor="ffff" style="font-weight:bold; font-size: 16px;">
+                        	<th>Tên người dùng</th>                            
+                            <th>Tên đăng nhập</th>
+                            <th>Địa chỉ</th>
+                            <th>Số điện thoại</th>
+                            <th>Email</th>
+                            <th>Ngày đăng ký</th>
+                            <th>Chức năng</th>                            
+                        </tr>
+                        @foreach (var user in Model)
+                        {
+                            <tr align="center" >
+                                <td>
+                                    @Html.DisplayFor(x=>user.tenkhachhang)
+                                </td>
+                        	    <td>
+                            	    @Html.DisplayFor(x=>user.makhachhang)                                
+                                </td>
+                                <td>
+                                   @user.diachi
+                                </td>
+                                <td>
+                            	    @user.sdt
+                                </td>
+                                <td>
+                                    @Html.DisplayFor(x=>user.email)
+
+                                </td>
+                                <td>
+                                    @{string ngaysinh = user.ngaysinh.ToString();
+                                      ngaysinh = ngaysinh.Substring(0, ngaysinh.LastIndexOf(":") - 6);
+                                    }
+                                     
+                                    @ngaysinh
+                                </td>
+                                <td>
+                            	    <a href="/admin/qluser/edit?ma=@Html.DisplayFor(x=>user.makhachhang)"><img style="height:24px;width:24px;" src="../../../../Image/edit.png" /></a>/
+                                    <a href="/admin/qluser/delete?id=@Html.DisplayFor(x=>user.makhachhang)" onclick="return xacnhanxoa()"><img style="height:24px;width:24px;" src="../../../../Image/delete.png"/></a>
+                                </td>
+                                                                
+                            </tr>
+                        }
+                                                                                               
+                        
+        </table>
+             <div>@{Html.RenderAction("Index", "pageAd", new { currentpage = "../Admin/qluser/index?ma="+@ViewBag.ma+"", totalpages = ViewBag.TotalPages});} </div>        
+    </div>
+</div>

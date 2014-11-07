@@ -1,0 +1,84 @@
+﻿@model giayit.Models.dsgiohang
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="columncenter">
+               <div class="header-center">Giỏ hàng </div>
+               <div style="width:580px;height:500px;" > 
+                   @if(Model.Cart.listsp.Count == 0)
+                   {
+                       <p style="font-family:'Times New Roman'; font-size: 18px; color: red; text-align:center">Bạn chưa chọn sản phẩm</p>
+                   }
+                   else
+                   {
+                   if (TempData["message"] != null) { 
+                        <p style="color:red; text-align:left;">@TempData["message"]</p>
+                        }
+                	<table id="t02" align="center" width="580" style="margin-top: 0px; font-size:14px; margin-bottom: 20px">
+                    	<tr align="center" bgcolor="#f6f6f6" style="font-weight:bold; font-size: 16px;">
+                        	<th>Sản phẩm</th>                            
+                            <th>Tình trạng</th>
+                            <th>Đơn giá</th>
+                            <th>Số lượng</th>
+                            <th>Thành tiền</th>
+                            <th>Xóa</th>
+                        </tr>
+                        @foreach(var line in Model.Cart.listsp)
+                        {
+                            <tr align="center" >
+                        	    <td>
+                            	    <a href="../sanpham/ChiTietSanPham?masp=@line.masp">
+                                        <img src="../@line.hinhanh" width="98" height="98"/>
+                                    </a>
+                                    <p>@line.Quantity x @line.tensp</p>
+                                
+                                </td>
+                                <td>
+                                    @if(@line.Soluongcon > 0)
+                                    {
+                            	        <span id="trangthai-con"> Còn</span>                                       
+                                    }                                    
+                                </td>
+                                <td>
+                            	    @String.Format("{0:0,0 VNĐ}", Convert.ToInt32(line.giasanpham)) 
+                                </td>
+                                <td>
+                            	    @using (Html.BeginForm("capnhatsoluong", "GioHang", new {masanpham=@line.masp, soluongcon=@line.Soluongcon }))
+                                    { 
+                            	    <input type="text"  name="soluong"  style="width:30px" value="@line.Quantity" />                        
+                                    <input type="submit" alt="Cập nhật" class="updatesoluong" value="" style="background-image:url(../Image/refesh.png);width:25px;height:25px" />
+                                   }
+                                </td>
+                                <td>
+                            	    @String.Format("{0:0,0 VNĐ}", Convert.ToInt32(line.giasanpham * line.Quantity))
+                                </td>
+                                <td>
+                            	    <a onclick="return xacnhanxoa('@line.masp')" href="/giohang/giohangxoa?masanpham=@line.masp"><img src="../Image/icon-del.png" alt="Xoá"></a>
+                                </td>
+                            </tr>
+                        }
+                        
+                                                                        
+                        <tr align="right">
+                        	<td colspan="5" style="font-size:17px; font-weight:bold;">Xóa hết</td>
+                            <td style="font-size:17px; font-weight:bold;"><a href="/giohang/xoahet"><img src="../Image/xoa-icon.png" height="13" width="26"/></a></td>
+                        </tr>
+                        <tr align="right">
+                        	<td colspan="4" style="font-size:17px; font-weight:bold;">Tổng tiền</td>
+                            <td colspan="2" style="font-size:17px; font-weight:bold;">@String.Format("{0:0,0 VNĐ}", Convert.ToInt32(Model.Cart.tongtien())) </td>
+                        </tr>
+                    </table>
+                    <div > 
+                 	<a href="/home/index" style="font-size: 17px; color:#333; font-weight:bold; margin:10px; float:left"><img src="../Image/back.png" style="height: 10px; width: 15px" />Tiếp tục mua hàng</a>
+                        
+                        <a href="../giohang/thanhtoan" ><input type="submit" value="Thanh toán" style="float:right; margin:10px; height:40px; width: 120px; background-color:#090; color:#FFF; font-size:17px; font-weight:bold; cursor:pointer" /></a>
+                        
+                            
+                        
+                    </div>
+                   }
+               </div>  
+            </div>

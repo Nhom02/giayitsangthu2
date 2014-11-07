@@ -1,0 +1,35 @@
+﻿@model IEnumerable<giayit.ServiceReferenceSanPham.loaisanpham>
+
+@{
+    string url = HttpContext.Current.Request.Url.AbsoluteUri;
+    ViewBag.url = url;
+    }
+                     <div>
+                          <div id="wrapper">
+                           @using (Html.BeginForm("TimKiemCB", "SanPham", FormMethod.Get, new { enctype = "multipart/form-data" }))
+                           { 
+     	                       <input id="coban" type="text"  placeholder="Nhập tên sản phẩm"  name="chuoitk" value="@ViewBag.chuoitk" />
+     	                       <input id="btnsearch" type="submit" name="tkcoban" value="Tìm" />
+	                       }
+                             <a href="" id="link" onclick="return show_hide()" style="   font-size: 16px"><span>Tìm kiếm nâng cao</span></a>
+                     </div>
+                     <div id="full" style="display:none">
+                           <form action="../sanpham/timkiemnc" method="get" name="tknangcao">
+                               <input id="coban" type="text"  placeholder="Nhập tên sản phâm" value=""  name="chuoitk" autocomplete="off" size="10"/>
+    	                      <select name="loaihang" >
+                                   <option value="">Hãng</option>
+                                  @foreach(var item in Model)
+                                  {
+                                    <option value="@Html.DisplayFor(x => item.maloai)">@Html.DisplayFor(x=> item.tenloai)</option>
+            		        
+                                  }
+                                  
+    	                      </select>
+		                    <br>
+		                   <input id="giatu" type="text"  placeholder="Giá từ"  value="" name="giatu" autocomplete="off" size="10"><br>
+		                 <input id="den"  type="text"  placeholder="Giá đến"  value=""  name="giaden" autocomplete="off" size="10">	
+                         <input id="btnsearch" type="submit" name="tknangcao" value="Tìm" />
+                         </form>
+                      <a href="" id="link" onclick="return show_hide()" style="font-size:16px"><span>Tìm kiếm cơ bản</span>				</a>
+                  		 </div>
+            	 	</div>

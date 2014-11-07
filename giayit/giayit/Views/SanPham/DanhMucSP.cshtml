@@ -1,0 +1,13 @@
+﻿@model IEnumerable<giayit.ServiceReferenceSanPham.loaisanpham>
+                   <div style="margin-top:3px">
+                        <div class="sidebarmenu">
+			                <ul id="sidebarmenu1">                                    
+                                @foreach (var item in Model)
+                                    {
+                                <li><a href="../SanPham/LietKeSP?ma=@Html.DisplayFor(x => item.maloai)">@Html.DisplayFor(x => item.tenloai)</a>         
+				                </li>
+                                    }
+                                    
+			                </ul>
+         	            </div>
+                    </div>   

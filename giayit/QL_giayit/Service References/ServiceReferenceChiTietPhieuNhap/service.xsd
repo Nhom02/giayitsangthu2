@@ -1,0 +1,92 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://tempuri.org/" elementFormDefault="qualified" targetNamespace="http://tempuri.org/" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import namespace="http://schemas.datacontract.org/2004/07/ServiceGiayit" />
+  <xs:element name="getallchitietphieunhap">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="getallchitietphieunhapResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q1="http://schemas.datacontract.org/2004/07/ServiceGiayit" minOccurs="0" name="getallchitietphieunhapResult" nillable="true" type="q1:ArrayOfchitietphieunhap" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Select_chitietphieunhap_theonam">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="nam" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Select_chitietphieunhap_theonamResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q2="http://schemas.datacontract.org/2004/07/ServiceGiayit" minOccurs="0" name="Select_chitietphieunhap_theonamResult" nillable="true" type="q2:ArrayOfchitietphieunhap" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="laysoluongtheothang">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="thang" type="xs:int" />
+        <xs:element xmlns:q3="http://schemas.datacontract.org/2004/07/ServiceGiayit" minOccurs="0" name="dsctpn" nillable="true" type="q3:ArrayOfchitietphieunhap" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="laysoluongtheothangResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="laysoluongtheothangResult" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Select_chitietphieunhap_theothang">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="thang" type="xs:int" />
+        <xs:element minOccurs="0" name="nam" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Select_chitietphieunhap_theothangResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q4="http://schemas.datacontract.org/2004/07/ServiceGiayit" minOccurs="0" name="Select_chitietphieunhap_theothangResult" nillable="true" type="q4:ArrayOfchitietphieunhap" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="laysoluongtheongay">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="ngay" type="xs:int" />
+        <xs:element xmlns:q5="http://schemas.datacontract.org/2004/07/ServiceGiayit" minOccurs="0" name="dsctpn" nillable="true" type="q5:ArrayOfchitietphieunhap" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="laysoluongtheongayResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="laysoluongtheongayResult" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Themctpn">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="maphieunhap" type="xs:int" />
+        <xs:element minOccurs="0" name="masanpham" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="gia" type="xs:int" />
+        <xs:element minOccurs="0" name="soluong" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ThemctpnResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="ThemctpnResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

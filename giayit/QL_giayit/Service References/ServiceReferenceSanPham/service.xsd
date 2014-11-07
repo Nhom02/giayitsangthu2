@@ -1,0 +1,137 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://tempuri.org/" elementFormDefault="qualified" targetNamespace="http://tempuri.org/" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import namespace="http://schemas.datacontract.org/2004/07/ServiceGiayit" />
+  <xs:element name="Getallloaisanpham">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetallloaisanphamResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q1="http://schemas.datacontract.org/2004/07/ServiceGiayit" minOccurs="0" name="GetallloaisanphamResult" nillable="true" type="q1:ArrayOfloaisanpham" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Getallsanpham">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetallsanphamResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q2="http://schemas.datacontract.org/2004/07/ServiceGiayit" minOccurs="0" name="GetallsanphamResult" nillable="true" type="q2:ArrayOfsanpham" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Getallnhacungcap">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetallnhacungcapResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q3="http://schemas.datacontract.org/2004/07/ServiceGiayit" minOccurs="0" name="GetallnhacungcapResult" nillable="true" type="q3:ArrayOfnhacungcap" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Getalladmin">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetalladminResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q4="http://schemas.datacontract.org/2004/07/ServiceGiayit" minOccurs="0" name="GetalladminResult" nillable="true" type="q4:ArrayOfadmin" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="themsp">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="maloai" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="tensp" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="chatlieu" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="gia" type="xs:int" />
+        <xs:element minOccurs="0" name="mota" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="sl" type="xs:int" />
+        <xs:element minOccurs="0" name="hinhanh" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="themspResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="themspResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="deletesp">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="masp" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="deletespResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="deletespResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="editsp">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="id" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="tensp" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="chatlieu" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="gia" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="mota" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="sl" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="_hinhanh" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="loaisp" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="_url" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="editspResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="editspResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="getsanpham">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="masanpham" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="getsanphamResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q5="http://schemas.datacontract.org/2004/07/ServiceGiayit" minOccurs="0" name="getsanphamResult" nillable="true" type="q5:sanpham" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="editslsp">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="masp" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="soluong" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="editslspResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="editslspResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

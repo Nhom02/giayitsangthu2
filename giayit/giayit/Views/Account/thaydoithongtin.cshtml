@@ -1,0 +1,80 @@
+﻿@model giayit.ServiceReferenceAccount.user
+
+@{
+    ViewBag.Title = "thaydoithongtin";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="columncenter">
+    <div class="header-center">Đăng ký tài khoản </div>
+    <div style="width:580px;height:auto" >
+<div class="formn">
+    <form action="../account/thaydoithongtin"  name="fuser"  action = "create" method = "post"  onsubmit="return ktttuser()" >
+         
+        <fieldset style="width:auto">
+            <legend style="flex-item-align:center">Tài khoản</legend>
+            @if (ViewBag.ma != "3")
+            { 
+            <div class="editor-label">
+                Họ tên
+            </div>
+            <div class="editor-field">
+                 <input type="text" name="hoten" value="@Model.tenkhachhang"/>
+                <b><font size="-1" color="red"><name></name></font></b><img name="name" src="" /><br />
+            </div>
+             <div class="editor-label">
+                Số điện thoại
+            </div>
+            <div class="editor-field">
+                 <input type="text" name="sdt" value="@Model.sdt" /><b><font size="-1" color="red"><phone></phone></font></b><img name="phone" src="" /><br />
+            </div>
+            <div class="editor-label">
+                Giới tính
+            </div>
+            <div class="editor-field">
+                <select name="gioitinh" >
+                    @if(Model.gioitinh == 1)
+                    {
+                      <option value="1">Nam</option>
+                    }
+                    else
+                    {
+                       <option value="0">Nữ</option>
+                    }
+    	         </select>
+            </div>
+            
+             <div class="editor-label">
+                Địa chỉ
+            </div>
+            <div class="editor-field">
+                <textarea name="diachi" >@Model.diachi</textarea><b><font size="-1" color="red"><add></add></font></b><img name="add" src="" /><br />
+                
+            </div>
+             <div class="editor-label">
+                Email
+            </div>
+            <div class="editor-field">
+                 <input type="text" name="email" value="@Model.email"/><b><font size="-1" color="red"><mail></mail></font></b><img name="mail" src="" /><br />
+            </div>
+           
+            <div class="editor-label"> 
+            
+                <input type="submit" value="Thay đổi" style="height:40px; width: 120px; background-color:#ff6a00; color:#FFF; font-size:17px; font-weight:bold; cursor:pointer" />
+            </div>
+            }else
+            {
+                <div class="editor-label">
+                   
+                THAY ĐỔI THÀNH CÔNG
+            </div> 
+            }
+        </fieldset>
+            
+            </form>
+    <div>
+       <a href="../Home/Index" style="font-size: 17px; color:#333; font-weight:bold; margin:10px; float:left"><img src="../Image/back.png" style="height: 10px; width: 15px" />Trở về trang chủ</a>
+    </div>
+</div>
+        </div>
+    </div>

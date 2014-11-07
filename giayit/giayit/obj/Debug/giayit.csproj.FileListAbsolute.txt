@@ -1,0 +1,126 @@
+D:\Cac cong nghe lap trinh hien dai\Source code\giayit\giayit\bin\giayit.dll
+D:\Cac cong nghe lap trinh hien dai\Source code\giayit\giayit\bin\giayit.pdb
+D:\Cac cong nghe lap trinh hien dai\Source code\giayit\giayit\bin\EntityFramework.dll
+D:\Cac cong nghe lap trinh hien dai\Source code\giayit\giayit\bin\Microsoft.Web.Infrastructure.dll
+D:\Cac cong nghe lap trinh hien dai\Source code\giayit\giayit\bin\System.Web.Helpers.dll
+D:\Cac cong nghe lap trinh hien dai\Source code\giayit\giayit\bin\System.Web.Mvc.dll
+D:\Cac cong nghe lap trinh hien dai\Source code\giayit\giayit\bin\System.Web.Providers.dll
+D:\Cac cong nghe lap trinh hien dai\Source code\giayit\giayit\bin\System.Web.Razor.dll
+D:\Cac cong nghe lap trinh hien dai\Source code\giayit\giayit\bin\System.Web.WebPages.Deployment.dll
+D:\Cac cong nghe lap trinh hien dai\Source code\giayit\giayit\bin\System.Web.WebPages.dll
+D:\Cac cong nghe lap trinh hien dai\Source code\giayit\giayit\bin\System.Web.WebPages.Razor.dll
+D:\Cac cong nghe lap trinh hien dai\Source code\giayit\giayit\bin\EntityFramework.xml
+D:\Cac cong nghe lap trinh hien dai\Source code\giayit\giayit\bin\System.Web.Helpers.xml
+D:\Cac cong nghe lap trinh hien dai\Source code\giayit\giayit\bin\System.Web.Mvc.xml
+D:\Cac cong nghe lap trinh hien dai\Source code\giayit\giayit\bin\System.Web.Razor.xml
+D:\Cac cong nghe lap trinh hien dai\Source code\giayit\giayit\bin\System.Web.WebPages.xml
+D:\Cac cong nghe lap trinh hien dai\Source code\giayit\giayit\bin\System.Web.WebPages.Deployment.xml
+D:\Cac cong nghe lap trinh hien dai\Source code\giayit\giayit\bin\System.Web.WebPages.Razor.xml
+D:\Cac cong nghe lap trinh hien dai\Source code\giayit\giayit\obj\Debug\giayit.csprojResolveAssemblyReference.cache
+D:\Cac cong nghe lap trinh hien dai\Source code\giayit\giayit\obj\Debug\giayit.dll
+D:\Cac cong nghe lap trinh hien dai\Source code\giayit\giayit\obj\Debug\giayit.pdb
+C:\Users\DUNG\Desktop\giayit1\giayit\giayit\bin\giayit.dll
+C:\Users\DUNG\Desktop\giayit1\giayit\giayit\bin\giayit.pdb
+C:\Users\DUNG\Desktop\giayit1\giayit\giayit\bin\EntityFramework.dll
+C:\Users\DUNG\Desktop\giayit1\giayit\giayit\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\DUNG\Desktop\giayit1\giayit\giayit\bin\System.Web.Helpers.dll
+C:\Users\DUNG\Desktop\giayit1\giayit\giayit\bin\System.Web.Mvc.dll
+C:\Users\DUNG\Desktop\giayit1\giayit\giayit\bin\System.Web.Providers.dll
+C:\Users\DUNG\Desktop\giayit1\giayit\giayit\bin\System.Web.Razor.dll
+C:\Users\DUNG\Desktop\giayit1\giayit\giayit\bin\System.Web.WebPages.Deployment.dll
+C:\Users\DUNG\Desktop\giayit1\giayit\giayit\bin\System.Web.WebPages.dll
+C:\Users\DUNG\Desktop\giayit1\giayit\giayit\bin\System.Web.WebPages.Razor.dll
+C:\Users\DUNG\Desktop\giayit1\giayit\giayit\bin\EntityFramework.xml
+C:\Users\DUNG\Desktop\giayit1\giayit\giayit\bin\System.Web.Helpers.xml
+C:\Users\DUNG\Desktop\giayit1\giayit\giayit\bin\System.Web.Mvc.xml
+C:\Users\DUNG\Desktop\giayit1\giayit\giayit\bin\System.Web.Razor.xml
+C:\Users\DUNG\Desktop\giayit1\giayit\giayit\bin\System.Web.WebPages.xml
+C:\Users\DUNG\Desktop\giayit1\giayit\giayit\bin\System.Web.WebPages.Deployment.xml
+C:\Users\DUNG\Desktop\giayit1\giayit\giayit\bin\System.Web.WebPages.Razor.xml
+C:\Users\DUNG\Desktop\giayit1\giayit\giayit\obj\Debug\giayit.csprojResolveAssemblyReference.cache
+C:\Users\DUNG\Desktop\giayit1\giayit\giayit\obj\Debug\giayit.dll
+C:\Users\DUNG\Desktop\giayit1\giayit\giayit\obj\Debug\giayit.pdb
+C:\Users\Tran Van Tuan\Desktop\giayit\giayit\obj\Debug\giayit.csprojResolveAssemblyReference.cache
+C:\Users\Tran Van Tuan\Desktop\giayit\giayit\obj\Debug\giayit.dll
+C:\Users\Tran Van Tuan\Desktop\giayit\giayit\obj\Debug\giayit.pdb
+C:\Users\Tran Van Tuan\Desktop\giayit\giayit\bin\giayit.dll
+C:\Users\Tran Van Tuan\Desktop\giayit\giayit\bin\giayit.pdb
+C:\Users\Tran Van Tuan\Desktop\giayit\giayit\bin\EntityFramework.dll
+C:\Users\Tran Van Tuan\Desktop\giayit\giayit\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\Tran Van Tuan\Desktop\giayit\giayit\bin\System.Web.Helpers.dll
+C:\Users\Tran Van Tuan\Desktop\giayit\giayit\bin\System.Web.Mvc.dll
+C:\Users\Tran Van Tuan\Desktop\giayit\giayit\bin\System.Web.Providers.dll
+C:\Users\Tran Van Tuan\Desktop\giayit\giayit\bin\System.Web.Razor.dll
+C:\Users\Tran Van Tuan\Desktop\giayit\giayit\bin\System.Web.WebPages.Deployment.dll
+C:\Users\Tran Van Tuan\Desktop\giayit\giayit\bin\System.Web.WebPages.dll
+C:\Users\Tran Van Tuan\Desktop\giayit\giayit\bin\System.Web.WebPages.Razor.dll
+C:\Users\Tran Van Tuan\Desktop\giayit\giayit\bin\EntityFramework.xml
+C:\Users\Tran Van Tuan\Desktop\giayit\giayit\bin\System.Web.Helpers.xml
+C:\Users\Tran Van Tuan\Desktop\giayit\giayit\bin\System.Web.Mvc.xml
+C:\Users\Tran Van Tuan\Desktop\giayit\giayit\bin\System.Web.Razor.xml
+C:\Users\Tran Van Tuan\Desktop\giayit\giayit\bin\System.Web.WebPages.xml
+C:\Users\Tran Van Tuan\Desktop\giayit\giayit\bin\System.Web.WebPages.Deployment.xml
+C:\Users\Tran Van Tuan\Desktop\giayit\giayit\bin\System.Web.WebPages.Razor.xml
+C:\Users\DUNG\Desktop\giayit4\giayit\giayit\bin\giayit.dll
+C:\Users\DUNG\Desktop\giayit4\giayit\giayit\bin\giayit.pdb
+C:\Users\DUNG\Desktop\giayit4\giayit\giayit\bin\EntityFramework.dll
+C:\Users\DUNG\Desktop\giayit4\giayit\giayit\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\DUNG\Desktop\giayit4\giayit\giayit\bin\System.Web.Helpers.dll
+C:\Users\DUNG\Desktop\giayit4\giayit\giayit\bin\System.Web.Mvc.dll
+C:\Users\DUNG\Desktop\giayit4\giayit\giayit\bin\System.Web.Providers.dll
+C:\Users\DUNG\Desktop\giayit4\giayit\giayit\bin\System.Web.Razor.dll
+C:\Users\DUNG\Desktop\giayit4\giayit\giayit\bin\System.Web.WebPages.Deployment.dll
+C:\Users\DUNG\Desktop\giayit4\giayit\giayit\bin\System.Web.WebPages.dll
+C:\Users\DUNG\Desktop\giayit4\giayit\giayit\bin\System.Web.WebPages.Razor.dll
+C:\Users\DUNG\Desktop\giayit4\giayit\giayit\bin\EntityFramework.xml
+C:\Users\DUNG\Desktop\giayit4\giayit\giayit\bin\System.Web.Helpers.xml
+C:\Users\DUNG\Desktop\giayit4\giayit\giayit\bin\System.Web.Mvc.xml
+C:\Users\DUNG\Desktop\giayit4\giayit\giayit\bin\System.Web.Razor.xml
+C:\Users\DUNG\Desktop\giayit4\giayit\giayit\bin\System.Web.WebPages.xml
+C:\Users\DUNG\Desktop\giayit4\giayit\giayit\bin\System.Web.WebPages.Deployment.xml
+C:\Users\DUNG\Desktop\giayit4\giayit\giayit\bin\System.Web.WebPages.Razor.xml
+C:\Users\DUNG\Desktop\giayit4\giayit\giayit\obj\Debug\giayit.csprojResolveAssemblyReference.cache
+C:\Users\DUNG\Desktop\giayit4\giayit\giayit\obj\Debug\giayit.dll
+C:\Users\DUNG\Desktop\giayit4\giayit\giayit\obj\Debug\giayit.pdb
+C:\Users\DUNG\Desktop\giayit13\giayit\giayit\bin\giayit.dll
+C:\Users\DUNG\Desktop\giayit13\giayit\giayit\bin\giayit.pdb
+C:\Users\DUNG\Desktop\giayit13\giayit\giayit\bin\EntityFramework.dll
+C:\Users\DUNG\Desktop\giayit13\giayit\giayit\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\DUNG\Desktop\giayit13\giayit\giayit\bin\System.Web.Helpers.dll
+C:\Users\DUNG\Desktop\giayit13\giayit\giayit\bin\System.Web.Mvc.dll
+C:\Users\DUNG\Desktop\giayit13\giayit\giayit\bin\System.Web.Providers.dll
+C:\Users\DUNG\Desktop\giayit13\giayit\giayit\bin\System.Web.Razor.dll
+C:\Users\DUNG\Desktop\giayit13\giayit\giayit\bin\System.Web.WebPages.Deployment.dll
+C:\Users\DUNG\Desktop\giayit13\giayit\giayit\bin\System.Web.WebPages.dll
+C:\Users\DUNG\Desktop\giayit13\giayit\giayit\bin\System.Web.WebPages.Razor.dll
+C:\Users\DUNG\Desktop\giayit13\giayit\giayit\bin\EntityFramework.xml
+C:\Users\DUNG\Desktop\giayit13\giayit\giayit\bin\System.Web.Helpers.xml
+C:\Users\DUNG\Desktop\giayit13\giayit\giayit\bin\System.Web.Mvc.xml
+C:\Users\DUNG\Desktop\giayit13\giayit\giayit\bin\System.Web.Razor.xml
+C:\Users\DUNG\Desktop\giayit13\giayit\giayit\bin\System.Web.WebPages.xml
+C:\Users\DUNG\Desktop\giayit13\giayit\giayit\bin\System.Web.WebPages.Deployment.xml
+C:\Users\DUNG\Desktop\giayit13\giayit\giayit\bin\System.Web.WebPages.Razor.xml
+C:\Users\DUNG\Desktop\giayit13\giayit\giayit\obj\Debug\giayit.csprojResolveAssemblyReference.cache
+C:\Users\DUNG\Desktop\giayit13\giayit\giayit\obj\Debug\giayit.dll
+C:\Users\DUNG\Desktop\giayit13\giayit\giayit\obj\Debug\giayit.pdb
+D:\Dich vu web va ung dung\Source code\giayit13\giayit\giayit\bin\giayit.dll
+D:\Dich vu web va ung dung\Source code\giayit13\giayit\giayit\bin\giayit.pdb
+D:\Dich vu web va ung dung\Source code\giayit13\giayit\giayit\bin\EntityFramework.dll
+D:\Dich vu web va ung dung\Source code\giayit13\giayit\giayit\bin\Microsoft.Web.Infrastructure.dll
+D:\Dich vu web va ung dung\Source code\giayit13\giayit\giayit\bin\System.Web.Helpers.dll
+D:\Dich vu web va ung dung\Source code\giayit13\giayit\giayit\bin\System.Web.Mvc.dll
+D:\Dich vu web va ung dung\Source code\giayit13\giayit\giayit\bin\System.Web.Providers.dll
+D:\Dich vu web va ung dung\Source code\giayit13\giayit\giayit\bin\System.Web.Razor.dll
+D:\Dich vu web va ung dung\Source code\giayit13\giayit\giayit\bin\System.Web.WebPages.Deployment.dll
+D:\Dich vu web va ung dung\Source code\giayit13\giayit\giayit\bin\System.Web.WebPages.dll
+D:\Dich vu web va ung dung\Source code\giayit13\giayit\giayit\bin\System.Web.WebPages.Razor.dll
+D:\Dich vu web va ung dung\Source code\giayit13\giayit\giayit\bin\EntityFramework.xml
+D:\Dich vu web va ung dung\Source code\giayit13\giayit\giayit\bin\System.Web.Helpers.xml
+D:\Dich vu web va ung dung\Source code\giayit13\giayit\giayit\bin\System.Web.Mvc.xml
+D:\Dich vu web va ung dung\Source code\giayit13\giayit\giayit\bin\System.Web.Razor.xml
+D:\Dich vu web va ung dung\Source code\giayit13\giayit\giayit\bin\System.Web.WebPages.xml
+D:\Dich vu web va ung dung\Source code\giayit13\giayit\giayit\bin\System.Web.WebPages.Deployment.xml
+D:\Dich vu web va ung dung\Source code\giayit13\giayit\giayit\bin\System.Web.WebPages.Razor.xml
+D:\Dich vu web va ung dung\Source code\giayit13\giayit\giayit\obj\Debug\giayit.csprojResolveAssemblyReference.cache
+D:\Dich vu web va ung dung\Source code\giayit13\giayit\giayit\obj\Debug\giayit.dll
+D:\Dich vu web va ung dung\Source code\giayit13\giayit\giayit\obj\Debug\giayit.pdb

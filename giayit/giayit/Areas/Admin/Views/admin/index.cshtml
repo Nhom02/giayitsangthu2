@@ -1,0 +1,47 @@
+﻿@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>@ViewBag.Title</title>
+    <link href="@Url.Content("~/Content/Site.css")" rel="stylesheet" type="text/css" />
+    <script src="@Url.Content("~/Scripts/jquery-1.7.1.min.js")" type="text/javascript"></script>
+    <script src="@Url.Content("~/Scripts/modernizr-2.5.3.js")" type="text/javascript"></script>
+    <script src="../../Scripts/cript.js" type="text/javascript"></script>
+    <title>Đăng nhập Admin</title>
+</head>
+<body background="../../image/BodyBg.jpg">
+    <div align="center">
+    <a href="../../../../" name="top"><div class="banner"></div></a></div>
+     
+                
+                   <div align="center">
+                    <div class="tittles"><font size="+4" color="white">Admin Login</font></div><br /><br /><p></p>
+                       
+                    <div class="noidungloginadmin">
+                     @if (TempData["message"] != null) { 
+                        <p style="color:red; text-align:left;">@TempData["message"]</p> 
+                    }      
+                       <form name="dangnhap" method="post" action="/Admin/admin/index" onsubmit="return kiemtradn()">
+                	    <span>
+                            <span>Tên truy cập</span><br />
+                	        <input id="username" name="username" placeholder="Admin" type="text"><br />
+                            <span>Mật khẩu</span><br />
+                            <input id="password" name="password" placeholder="***********" type="password"><br />
+                        </span>
+                    
+                        <span class="btnlogin">
+                            <input id="sbmAdDangNhap" name="sbmAdDangNhap" value="Đăng nhập" type="submit">
+           			    </span>
+                        </form>
+                    </div>
+                
+                        
+    </div>
+      
+</body>
+</html>

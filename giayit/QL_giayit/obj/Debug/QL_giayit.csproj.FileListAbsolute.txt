@@ -1,0 +1,42 @@
+D:\Cac cong nghe lap trinh hien dai\Source code\giayit\QL_giayit\bin\Debug\QL_giayit.exe.config
+D:\Cac cong nghe lap trinh hien dai\Source code\giayit\QL_giayit\bin\Debug\QL_giayit.exe
+D:\Cac cong nghe lap trinh hien dai\Source code\giayit\QL_giayit\bin\Debug\QL_giayit.pdb
+D:\Cac cong nghe lap trinh hien dai\Source code\giayit\QL_giayit\obj\Debug\QL_giayit.FormNhapHang.resources
+D:\Cac cong nghe lap trinh hien dai\Source code\giayit\QL_giayit\obj\Debug\QL_giayit.FormQLNhapHang.resources
+D:\Cac cong nghe lap trinh hien dai\Source code\giayit\QL_giayit\obj\Debug\QL_giayit.FormQuanLyTonKho.resources
+D:\Cac cong nghe lap trinh hien dai\Source code\giayit\QL_giayit\obj\Debug\QL_giayit.FormThongKe.resources
+D:\Cac cong nghe lap trinh hien dai\Source code\giayit\QL_giayit\obj\Debug\QL_giayit.Properties.Resources.resources
+D:\Cac cong nghe lap trinh hien dai\Source code\giayit\QL_giayit\obj\Debug\QL_giayit.csproj.GenerateResource.Cache
+D:\Cac cong nghe lap trinh hien dai\Source code\giayit\QL_giayit\obj\Debug\QL_giayit.exe
+D:\Cac cong nghe lap trinh hien dai\Source code\giayit\QL_giayit\obj\Debug\QL_giayit.pdb
+D:\Cac cong nghe lap trinh hien dai\Source code\giayit\QL_giayit\obj\Debug\QL_giayit.csprojResolveAssemblyReference.cache
+D:\Cac cong nghe lap trinh hien dai\Source code\giayit\QL_giayit\obj\Debug\QL_giayit.FormMain.resources
+C:\Users\DUNG\Desktop\giayit13\giayit\QL_giayit\bin\Debug\QL_giayit.exe.config
+C:\Users\DUNG\Desktop\giayit13\giayit\QL_giayit\obj\Debug\QL_giayit.exe
+C:\Users\DUNG\Desktop\giayit13\giayit\QL_giayit\obj\Debug\QL_giayit.pdb
+C:\Users\DUNG\Desktop\giayit13\giayit\QL_giayit\bin\Debug\QL_giayit.exe
+C:\Users\DUNG\Desktop\giayit13\giayit\QL_giayit\bin\Debug\QL_giayit.pdb
+C:\Users\DUNG\Desktop\giayit13\giayit\QL_giayit\obj\Debug\QL_giayit.csprojResolveAssemblyReference.cache
+C:\Users\DUNG\Desktop\giayit13\giayit\QL_giayit\obj\Debug\QL_giayit.FormMain.resources
+C:\Users\DUNG\Desktop\giayit13\giayit\QL_giayit\obj\Debug\QL_giayit.FormNhapHang.resources
+C:\Users\DUNG\Desktop\giayit13\giayit\QL_giayit\obj\Debug\QL_giayit.FormQLNhapHang.resources
+C:\Users\DUNG\Desktop\giayit13\giayit\QL_giayit\obj\Debug\QL_giayit.FormQuanLyTonKho.resources
+C:\Users\DUNG\Desktop\giayit13\giayit\QL_giayit\obj\Debug\QL_giayit.FormThongKe.resources
+C:\Users\DUNG\Desktop\giayit13\giayit\QL_giayit\obj\Debug\QL_giayit.Properties.Resources.resources
+C:\Users\DUNG\Desktop\giayit13\giayit\QL_giayit\obj\Debug\QL_giayit.csproj.GenerateResource.Cache
+D:\Dich vu web va ung dung\Source code\giayit13\giayit\QL_giayit\bin\Debug\QL_giayit.exe.config
+D:\Dich vu web va ung dung\Source code\giayit13\giayit\QL_giayit\obj\Debug\QL_giayit.exe
+D:\Dich vu web va ung dung\Source code\giayit13\giayit\QL_giayit\obj\Debug\QL_giayit.pdb
+D:\Dich vu web va ung dung\Source code\giayit13\giayit\QL_giayit\bin\Debug\QL_giayit.exe
+D:\Dich vu web va ung dung\Source code\giayit13\giayit\QL_giayit\bin\Debug\QL_giayit.pdb
+D:\Dich vu web va ung dung\Source code\giayit13\giayit\QL_giayit\obj\Debug\QL_giayit.csprojResolveAssemblyReference.cache
+D:\Dich vu web va ung dung\Source code\giayit13\giayit\QL_giayit\obj\Debug\QL_giayit.FormMain.resources
+D:\Dich vu web va ung dung\Source code\giayit13\giayit\QL_giayit\obj\Debug\QL_giayit.FormNhapHang.resources
+D:\Dich vu web va ung dung\Source code\giayit13\giayit\QL_giayit\obj\Debug\QL_giayit.FormQLNhapHang.resources
+D:\Dich vu web va ung dung\Source code\giayit13\giayit\QL_giayit\obj\Debug\QL_giayit.FormQuanLyTonKho.resources
+D:\Dich vu web va ung dung\Source code\giayit13\giayit\QL_giayit\obj\Debug\QL_giayit.FormThongKe.resources
+D:\Dich vu web va ung dung\Source code\giayit13\giayit\QL_giayit\obj\Debug\QL_giayit.Properties.Resources.resources
+D:\Dich vu web va ung dung\Source code\giayit13\giayit\QL_giayit\obj\Debug\QL_giayit.csproj.GenerateResource.Cache
+C:\Users\DUNG\Desktop\giayitsangthu2\giayit\QL_giayit\bin\Debug\QL_giayit.exe.config
+C:\Users\DUNG\Desktop\giayitsangthu2\giayit\QL_giayit\obj\Debug\QL_giayit.exe
+C:\Users\DUNG\Desktop\giayitsangthu2\giayit\QL_giayit\obj\Debug\QL_giayit.pdb

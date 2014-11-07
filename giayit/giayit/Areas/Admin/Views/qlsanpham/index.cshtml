@@ -1,0 +1,97 @@
+﻿@model IEnumerable<giayit.ServiceReferenceSanPham.sanpham>
+@{
+    ViewBag.Title = "Admin - Quản lý sản phẩm";
+    Layout = "~/Areas/admin/Views/Shared/_Layout.cshtml";
+}
+
+
+
+<div class="columcenter">
+     <div class="header-center">SẢN PHẨM</div>   
+     	<div style="width:781px;height:auto" >  
+             @if (TempData["message"] != null) { 
+                        <p style="color:red; text-align:left;">@TempData["message"]</p>
+                    }      
+        <a href="/admin/qlsanpham/index">
+            <img style="height:24px;width:24px;" src="../../../../Image/refesh.png" />
+        </a>
+        <a href="/admin/qlsanpham/themsp" target="_blank">
+            <img style="height:24px;width:24px;" src="../../../../Image/add-icon.png" />
+        </a>
+        <form name="frmSapXep" method="get" action="/Admin/qlsanpham/index">
+            <table>
+                                <tr>
+                                    <td style="width:800px;">                                        
+                                        <input style="width:190px; height:25px;" name="tensanpham" type="text" placeholder = "Tìm tên sản phẩm ..."  value="@ViewBag.Search"/>
+                                        <input style="background-color:#09F;color:#fff;height:25px;" type="submit" alt="Cập nhật" value="Tìm"  />                                         
+                                    </td>
+                                    <td>                                        
+                                        
+                                    </td>                             
+                                </tr>                        
+            </table>
+        </form>
+        <table id="t02" align="center" width="790" style="margin-top: 0px; font-size:14px; margin-bottom: 20px">
+                    	<tr align="center" bgcolor="#f6f6f6" style="font-weight:bold; font-size: 16px;">
+                        	<th>Mã Sản phẩm</th>                            
+                            <th>Tên sản phẩm</th>
+                            <th>Giá</th>
+                            <th>Số lượng còn</th>
+                            <th colspan="2">Chức năng</th>                            
+                        </tr>
+                        @foreach (var item in Model)
+                        {
+                            <tr align="center" >
+                                <td>
+                                    @item.masanpham
+                                    <br>
+                                    Trạng thái:
+                                   
+                                        @{
+                            if (item.sanphammoi == 1)
+                            {<font color="Blue"> Enable</font>}
+                            else
+                            { <font color="red"> Disable</font>}
+                                            }
+                                        
+                                </td>
+                        	    <td>
+                            	    <img src="../../@item.hinhanh" width="98" height="98"/>
+                                    <p>@item.tensanpham</p>
+                                
+                                </td>
+                                <td>
+                                   @String.Format("{0:0,0 VNĐ}", Convert.ToInt32(item.giasanpham))                                   
+                                </td>
+                                <td>
+                            	    @item.soluongcon
+                                </td>
+                                <td>
+                            	    <a href="/admin/qlsanpham/edit?id=@Html.DisplayFor(modelItem => item.masanpham)">
+                                        <img style="height:24px;width:24px;" src="../../../../Image/edit.png" />
+                            	    </a>
+                                </td>
+                                <td>
+                                     @{if(item.sanphammoi==1){
+                            	         <a href="/admin/qlsanpham/delete?id=@Html.DisplayFor(modelItem => item.masanpham)">
+                                             <img style="height:24px;width:24px;" src="../../../../Image/delete.png" onclick="return xacnhanxoa(this)" />
+                                        </a>
+                                        }
+                                            else{
+                                           <a href="/admin/qlsanpham/kichhoat?id=@Html.DisplayFor(modelItem => item.masanpham)">
+                                           <img style="height:24px;width:24px;" src="../../../../Image/icon_enable.jpg"/>
+                                               </a>}
+                                            }
+                            	    
+                                </td>
+                                
+                            </tr>
+                        }
+                                                                                               
+                        
+        </table>
+        <div>@{Html.RenderAction("Index", "pageAd", new { currentpage = "../Admin/qlsanpham/index?ma="+@ViewBag.ma+"", totalpages = ViewBag.TotalPages});} </div>        
+        
+        
+    </div>
+    </div>

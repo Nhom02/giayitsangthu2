@@ -1,0 +1,134 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://tempuri.org/" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="ServicePhieuNhap" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import namespace="http://tempuri.org/" />
+      <xsd:import namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import namespace="http://schemas.datacontract.org/2004/07/ServiceGiayit" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="IServicePhieuNhap_getallphieunhap_InputMessage">
+    <wsdl:part name="parameters" element="tns:getallphieunhap" />
+  </wsdl:message>
+  <wsdl:message name="IServicePhieuNhap_getallphieunhap_OutputMessage">
+    <wsdl:part name="parameters" element="tns:getallphieunhapResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServicePhieuNhap_Select_phieunhap_theonam_InputMessage">
+    <wsdl:part name="parameters" element="tns:Select_phieunhap_theonam" />
+  </wsdl:message>
+  <wsdl:message name="IServicePhieuNhap_Select_phieunhap_theonam_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Select_phieunhap_theonamResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServicePhieuNhap_laytongtientheothang_InputMessage">
+    <wsdl:part name="parameters" element="tns:laytongtientheothang" />
+  </wsdl:message>
+  <wsdl:message name="IServicePhieuNhap_laytongtientheothang_OutputMessage">
+    <wsdl:part name="parameters" element="tns:laytongtientheothangResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServicePhieuNhap_Select_phieunhap_theothang_InputMessage">
+    <wsdl:part name="parameters" element="tns:Select_phieunhap_theothang" />
+  </wsdl:message>
+  <wsdl:message name="IServicePhieuNhap_Select_phieunhap_theothang_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Select_phieunhap_theothangResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServicePhieuNhap_laytongtientheongay_InputMessage">
+    <wsdl:part name="parameters" element="tns:laytongtientheongay" />
+  </wsdl:message>
+  <wsdl:message name="IServicePhieuNhap_laytongtientheongay_OutputMessage">
+    <wsdl:part name="parameters" element="tns:laytongtientheongayResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServicePhieuNhap_Thempn_InputMessage">
+    <wsdl:part name="parameters" element="tns:Thempn" />
+  </wsdl:message>
+  <wsdl:message name="IServicePhieuNhap_Thempn_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ThempnResponse" />
+  </wsdl:message>
+  <wsdl:portType name="IServicePhieuNhap">
+    <wsdl:operation name="getallphieunhap">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServicePhieuNhap/getallphieunhap" message="tns:IServicePhieuNhap_getallphieunhap_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServicePhieuNhap/getallphieunhapResponse" message="tns:IServicePhieuNhap_getallphieunhap_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Select_phieunhap_theonam">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServicePhieuNhap/Select_phieunhap_theonam" message="tns:IServicePhieuNhap_Select_phieunhap_theonam_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServicePhieuNhap/Select_phieunhap_theonamResponse" message="tns:IServicePhieuNhap_Select_phieunhap_theonam_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="laytongtientheothang">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServicePhieuNhap/laytongtientheothang" message="tns:IServicePhieuNhap_laytongtientheothang_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServicePhieuNhap/laytongtientheothangResponse" message="tns:IServicePhieuNhap_laytongtientheothang_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Select_phieunhap_theothang">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServicePhieuNhap/Select_phieunhap_theothang" message="tns:IServicePhieuNhap_Select_phieunhap_theothang_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServicePhieuNhap/Select_phieunhap_theothangResponse" message="tns:IServicePhieuNhap_Select_phieunhap_theothang_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="laytongtientheongay">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServicePhieuNhap/laytongtientheongay" message="tns:IServicePhieuNhap_laytongtientheongay_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServicePhieuNhap/laytongtientheongayResponse" message="tns:IServicePhieuNhap_laytongtientheongay_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Thempn">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServicePhieuNhap/Thempn" message="tns:IServicePhieuNhap_Thempn_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServicePhieuNhap/ThempnResponse" message="tns:IServicePhieuNhap_Thempn_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="BasicHttpBinding_IServicePhieuNhap" type="tns:IServicePhieuNhap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="getallphieunhap">
+      <soap:operation soapAction="http://tempuri.org/IServicePhieuNhap/getallphieunhap" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Select_phieunhap_theonam">
+      <soap:operation soapAction="http://tempuri.org/IServicePhieuNhap/Select_phieunhap_theonam" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="laytongtientheothang">
+      <soap:operation soapAction="http://tempuri.org/IServicePhieuNhap/laytongtientheothang" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Select_phieunhap_theothang">
+      <soap:operation soapAction="http://tempuri.org/IServicePhieuNhap/Select_phieunhap_theothang" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="laytongtientheongay">
+      <soap:operation soapAction="http://tempuri.org/IServicePhieuNhap/laytongtientheongay" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Thempn">
+      <soap:operation soapAction="http://tempuri.org/IServicePhieuNhap/Thempn" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="ServicePhieuNhap">
+    <wsdl:port name="BasicHttpBinding_IServicePhieuNhap" binding="tns:BasicHttpBinding_IServicePhieuNhap">
+      <soap:address location="http://localhost:8733/Design_Time_Addresses/ServiceGiayit/ServicePhieuNhap/" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>
